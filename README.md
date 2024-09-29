@@ -1,10 +1,11 @@
-# LLM Chatbot Project along optional RAG model integration
+# Stateless LLM Wrapper Development with LangChain for Enhanced Reasoning
 
-Welcome to the **LLM Chatbot Project**! 🚀 This innovative project features two powerful Flask backends designed to tackle complex user queries using cutting-edge large language models (LLMs). 
 
-## Project Overview
+Welcome to the **Stateless LLM Wrapper**! 🚀 This innovative project features two powerful Flask backends designed to tackle complex user queries using cutting-edge large language models (LLMs). 
 
-### 🌟 LLM Chatbot with LangChain
+## Exercise Overview
+
+### 🌟 LLM with LangChain
 
 The first backend leverages the capabilities of **LangChain** along with **Azure OpenAI GPT-3.5 Turbo**. This dynamic duo is engineered to handle intricate and logical queries, providing users with seamless and intelligent responses.
 
@@ -16,7 +17,7 @@ In this setup, documents serve as the primary source of context, ensuring that t
 
 ### 🎨 React UI
 
-To enhance user experience, we’ve included a **React UI** that serves as the front-end interface for interacting with our chatbots. This intuitive design makes it easy for users to engage with the powerful LLMs behind the scenes.
+To enhance user experience, we’ve included a **React UI** that serves as the front-end interface for interacting with our backend. This intuitive design makes it easy for users to engage with the powerful LLMs behind the scenes.
 
 ## Project Structure
 
@@ -45,23 +46,23 @@ project-root/
 
 ## Getting Started
 
-### 🚀 LLM Chatbot Leveraging LangChain
+### 🚀 LLM Leveraging LangChain
 
 1. **Navigate to the `LLM_Bot` folder** in Visual Studio Code.
 2. **Create a `.env` file** with your Azure OpenAI instance details:
 
    ```
-   AZURE_OPENAI_DEPLOYMENT_NAME=<your-deployment-name>
+   AZURE_OPENAI_DEPLOYMENT_NAME=<your-text-embedding-model-deployment-name>
    AZURE_OPENAI_API_KEY=<your-api-key>
    AZURE_OPENAI_ENDPOINT=<your-endpoint>
-   AZURE_OPENAI_MODEL=<your-model>
-   AZURE_OPENAI_API_VERSION=<your-api-version>
+   AZURE_OPENAI_MODEL=<your-chat-completion-model-deployment-name>
+   AZURE_OPENAI_API_VERSION=<your-chat-completion-model-api-version>
    ```
    
 4. **Open the terminal** and run the following commands:
  
    ```
-   activate venv llmBot
+   llmBot/Scripts/activate
    pip install -r requirements.txt
    python main.py
    ```
@@ -96,17 +97,17 @@ project-root/
 2. Create a `.env` file and add your Azure OpenAI instance details:
 
     ```
-   AZURE_OPENAI_DEPLOYMENT_NAME=<your-deployment-name>
+   AZURE_OPENAI_DEPLOYMENT_NAME=<your-text-embedding-model-deployment-name>
    AZURE_OPENAI_API_KEY=<your-api-key>
    AZURE_OPENAI_ENDPOINT=<your-endpoint>
-   AZURE_OPENAI_MODEL=<your-model>
-   AZURE_OPENAI_API_VERSION=<your-api-version>
+   AZURE_OPENAI_MODEL=<your-chat-completion-model-deployment-name>
+   AZURE_OPENAI_API_VERSION=<your-chat-completion-model-api-version>
    ```
     
 4. Open the terminal and run:
 
    ```
-   activate venv llmBot
+   LLMchatbot/Scripts/activate
    pip install -r requirements.txt
    python main.py
    ```
