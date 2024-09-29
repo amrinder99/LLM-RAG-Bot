@@ -66,7 +66,7 @@ project-root/
    python main.py
    ```
    
-6. The application will run on `http://127.0.0.1:5001/chat`. Feel free to change the port if necessary!
+6. The application will run on local server `http://127.0.0.1:5001/chat`. Feel free to change the port if necessary!
 
 ### 🎨 React UI
 
@@ -110,7 +110,7 @@ project-root/
    python main.py
    ```
    
-6. This application will run on `http://127.0.0.1:5002/query`. Make sure to update the URL in `.env.staging` of the Amy UI to test the RAG LLM feature.
+6. This application will run on local server`http://127.0.0.1:5002/query`. Make sure to update the URL in `.env.staging` of the Amy UI to test the RAG LLM feature.
 
 
 ---
