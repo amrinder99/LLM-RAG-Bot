@@ -24,7 +24,7 @@ To enhance user experience, we’ve included a **React UI** that serves as the f
 ```
 project-root/
 │
-├── LLM_Bot/
+├── LLM_bot/
 │   ├── main.py
 │   ├── requirements.txt
 │   ├── .env
@@ -48,7 +48,7 @@ project-root/
 
 ### 🚀 LLM Leveraging LangChain
 
-1. **Navigate to the `LLM_Bot` folder** in Visual Studio Code.
+1. **Navigate to the `LLM_bot` folder** in Visual Studio Code.
 2. **Create a `.env` file** with your Azure OpenAI instance details:
 
    ```
@@ -62,7 +62,6 @@ project-root/
 4. **Open the terminal** and run the following commands:
  
    ```
-   llmBot/Scripts/activate
    pip install -r requirements.txt
    python main.py
    ```
@@ -97,7 +96,7 @@ project-root/
 2. Create a `.env` file and add your Azure OpenAI instance details:
 
     ```
-   AZURE_OPENAI_DEPLOYMENT_NAME=<your-text-embedding-model-deployment-name>
+   AZURE_OPENAI_DEPLOYMENT_NAME=<your-text-embedding-model-deployment-name> 
    AZURE_OPENAI_API_KEY=<your-api-key>
    AZURE_OPENAI_ENDPOINT=<your-endpoint>
    AZURE_OPENAI_MODEL=<your-chat-completion-model-deployment-name>
@@ -107,7 +106,6 @@ project-root/
 4. Open the terminal and run:
 
    ```
-   LLMchatbot/Scripts/activate
    pip install -r requirements.txt
    python main.py
    ```
