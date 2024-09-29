@@ -1,0 +1,67 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body, .app{
+    margin: 0;
+    padding: 0;
+    background-image: url('/src/assets/images/swinzBG.png') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.app {
+    min-height: 100vh; /* Ensure the app takes up the full viewport height */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: Add a semi-transparent overlay */
+  }
+#companyImage{
+    margin: 0 50px 0 0px;
+}
+
+.slicl-dots{
+    bottom: 7px !important;
+}
+.slide-item {
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.greetMessage{
+    margin-top: -8px;
+}
+
+.langIcong{
+    color: rgb(101, 101, 101) !important;
+    font-size: 40px;
+}
+
+/* Add this CSS to your existing stylesheet */
+
+/* Customize the color of the slider buttons */
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  color: #00de73 !important; /* Change this to the desired color */
+}
+
+/* Customize the color of the active slider button */
+.slick-slider .slick-dots li button {
+  color: #ff0000 !important; /* Change this to the desired color */
+}
+
+.emoji-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .emoji-btn:hover .emoji {
+    transform: scale(1.2);
+  }
+
+  session-feedback-container{
+    margin: auto 0 !important;
+  }
